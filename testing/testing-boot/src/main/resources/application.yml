@@ -62,15 +62,10 @@ server:
       mime-types: application/json, application/xml
 
 spring:
-   data:
-      mongodb:
-         uri: mongodb+srv://lepantoacademy:lepantoacademy@lepanto.84yjzf2.mongodb.net/?retryWrites=true&w=majority
-         database: lepanto
    datasource:
-      driver-class-name: org.hsqldb.jdbcDriver
-      jdbc-url: jdbc:hsqldb:hsql://localhost:9013/templateDB
-      username: SA
-      password:
+      url: jdbc:mysql://db4free.net:3306/lepanto
+      username: lepantoacademy
+      password: lepantoacademy
       initial-size: 10
       test-on-borrow: true
    main:

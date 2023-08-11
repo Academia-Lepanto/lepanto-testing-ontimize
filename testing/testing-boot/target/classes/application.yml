@@ -62,10 +62,12 @@ server:
       mime-types: application/json, application/xml
 
 spring:
-   data:
-      mongodb:
-         uri: mongodb+srv://lepantoacademy:lepantoacademy@lepanto.84yjzf2.mongodb.net/?retryWrites=true&w=majority
-         database: lepanto
+   datasource:
+      url: jdbc:mysql://db4free.net:3306/lepanto
+      username: lepantoacademy
+      password: lepantoacademy
+      initial-size: 10
+      test-on-borrow: true
    main:
       banner-mode: 'off'
    session:
