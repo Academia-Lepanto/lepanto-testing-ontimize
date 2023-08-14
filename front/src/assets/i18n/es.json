@@ -17,6 +17,7 @@
   "ERROR_USER_PASS_INCORRECT": "Usuario o contraseña incorrecta",
   "REMEMBER_ME": "Recuérdame",
   "FORGOT_PWD": "¿Has olvidado tu contraseña?",
-  "FOOTER_CREATED_BY": "Creado por Imatia Innovation",
-  "FOOTER_RIGHTS": "Todos los derechos reservados"
+  "FOOTER_CREATED_BY": "Lepanto Academy",
+  "FOOTER_RIGHTS": "Todos los derechos reservados",
+  "USERS": "Usuarios"
 }
