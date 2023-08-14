@@ -1,5 +1,7 @@
-<div fxFill fxLayout="column" fxLayoutAlign="start">
+<o-form separator=" " mode="tab" label-columns="name;surname" attr="tabla_partners" class="form-background" editable-detail="no">
+<div fxFill>
     <o-table attr="usersTable" service="users" entity="user" keys="username" 
-      columns="username;dni;subscription;start_date;name;surnames" visible-columns="username;name;surnames;subscription;start_date"  query-rows="20">
+      columns="username;dni;subscription;start_date;name;surnames" visible-columns="username;name;surnames;subscription;start_date">
     </o-table>
     </div>
+</o-form>    
