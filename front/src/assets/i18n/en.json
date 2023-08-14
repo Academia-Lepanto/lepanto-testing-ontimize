@@ -20,5 +20,14 @@
   "FOOTER_CREATED_BY": "Created by Imatia Innovation",
   "FOOTER_RIGHTS": "All rights reserved",
   "USERS": "Users",
-  "QUESTIONS" : "Questions"
+  "QUESTIONS": "Questions",
+  "question_code": "Question code",
+  "question": "Question",
+  "aptitude": "Aptitude",
+  "category" : "Category",
+  "explication": "Explanation",
+  "answer1": "Answer A",
+  "answer2": "Answer B",
+  "answer3": "Answer C",
+  "answer4": "Answer D"
 }

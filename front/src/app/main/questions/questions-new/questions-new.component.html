@@ -1,22 +1,38 @@
 <h1 class="titleText2">{{'AÑADIR PREGUNTA' | oTranslate }}</h1>
 <o-form service="questions" entity="question" keys="question_code" header-actions="R;I;U;D" show-header-navigation="no">
-    <o-row>
-        <o-column title-label="QUESTION_INFORMATION" fxFlex>
-            <o-column>
-                <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes"></o-text-input>
-                <o-text-input class="input-padding" attr="question" fxFlex="250" required="yes"></o-text-input>
-                <o-row>
-                    <o-text-input class="input-padding" attr="aptitude" fxFlex="40" required="yes"></o-text-input>
-                    <o-text-input class="input-padding" attr="category" fxFlex="40" required="yes"></o-text-input>
-                </o-row>
-                <o-text-input attr="explication" fxFlex="250"></o-text-input>
+    <div>
+        <o-row>
+            <o-column title-label="QUESTION_INFORMATION" fxFlex>
+                <o-column>
+                    <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes"></o-text-input>
+                    <o-text-input class="input-padding" attr="question" fxFlex="250" required="yes"></o-text-input>
+                    <o-row>
+                        <o-text-input class="input-padding" attr="aptitude" fxFlex="40" required="yes"></o-text-input>
+                        <o-text-input class="input-padding" attr="category" fxFlex="40" required="yes"></o-text-input>
+                    </o-row>
+                    <o-text-input attr="explication" fxFlex="250"></o-text-input>
+                </o-column>
             </o-column>
-            <o-column>
-                <o-text-input class="input-padding" attr="answer1" fxFlex="250" required="yes"></o-text-input>
-                <o-text-input class="input-padding" attr="answer2" fxFlex="250" required="yes"></o-text-input>
-                <o-text-input class="input-padding" attr="answer3" fxFlex="250" required="yes"></o-text-input>
-                <o-text-input class="input-padding" attr="answer4" fxFlex="250" required="yes"></o-text-input>
-            </o-column>
+        </o-row>
+    </div>
+    <div>
+        <o-column>
+            <o-row>
+                <o-text-input class="input-padding" attr="answer1" fxFlex="50" required="yes"></o-text-input>
+                <o-slide-toggle attr="slidetoggle-editable1" label="" read-only="no"></o-slide-toggle>
+            </o-row>
+            <o-row>
+                <o-text-input class="input-padding" attr="answer2" fxFlex="50" required="yes"></o-text-input>
+                <o-slide-toggle attr="slidetoggle-editable2" label="" read-only="no"></o-slide-toggle>
+            </o-row>
+            <o-row>
+                <o-text-input class="input-padding" attr="answer3" fxFlex="50" required="yes"></o-text-input>
+                <o-slide-toggle attr="slidetoggle-editable3" label="" read-only="no"></o-slide-toggle>
+            </o-row>
+            <o-row>
+                <o-text-input class="input-padding" attr="answer4" fxFlex="50" required="yes"></o-text-input>
+                <o-slide-toggle attr="slidetoggle-editable4" label="" read-only="no"></o-slide-toggle>
+            </o-row>
         </o-column>
-    </o-row>
+    </div>
 </o-form>

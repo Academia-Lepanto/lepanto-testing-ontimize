@@ -20,5 +20,14 @@
   "FOOTER_CREATED_BY": "Lepanto Academy",
   "FOOTER_RIGHTS": "Todos los derechos reservados",
   "USERS": "Usuarios",
-  "QUESTIONS" : "Preguntas"
+  "QUESTIONS": "Preguntas",
+  "question_code": "Código de pregunta",
+  "question": "Pregunta",
+  "aptitude" : "Aptitud",
+  "category" : "Categoría",
+  "explication": "Explicación",
+  "answer1": "Respuesta A",
+  "answer2": "Respuesta B",
+  "answer3": "Respuesta C",
+  "answer4": "Respuesta D"
 }
