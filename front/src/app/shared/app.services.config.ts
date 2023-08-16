@@ -8,5 +8,8 @@ export const SERVICE_CONFIG: Object = {
   'aptitudes': {
     'path': '/aptitudes'
   },
+  'categoryAptitude': {
+    'path': '/categoryAptitude'
+  },
   
 };

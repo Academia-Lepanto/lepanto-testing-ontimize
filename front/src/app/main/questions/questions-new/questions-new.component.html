@@ -7,14 +7,14 @@
                     <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes"></o-text-input>
                     <o-text-input class="input-padding" attr="question" fxFlex="250" required="yes"></o-text-input>
                     <o-row>
-                        <o-combo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude"
-                            value-column="aptitude" columns="aptitude" visible-columns="aptitude" required="yes"
+                        <o-combo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
+                            value-column="aptitude_name" columns="aptitude_name" visible-columns="aptitude_name" required="yes"
                             multiple="no" fxFlex sort="ASC" searchable="yes"></o-combo>
-                        <!-- A ARREGLAR COMBO CATEGORIAS                         
-    <o-combo attr="category" label="Categoria" service="aptitudes" entity="aptitudes"
-                            keys="aptitude" value-column="aptitude" columns="aptitude;categories" visible-columns="aptitude;categories" required="no"
-                            multiple="no" fxFlex sort="ASC" searchable="yes" default="abc"></o-combo> -->
-                        <o-text-input attr="category" fxFlex="50"></o-text-input>
+
+                        <o-combo attr="category" label="Categoria" service="categoryAptitude" entity="allCategoryAptitude"
+                            keys="aptitude_id" value-column="category_name" columns="category_name,aptitude_id"
+                            visible-columns="category_name" required="no" multiple="no" fxFlex sort="ASC"
+                            searchable="yes"></o-combo>
 
                     </o-row>
                     <o-text-input attr="explication" fxFlex="250"></o-text-input>
