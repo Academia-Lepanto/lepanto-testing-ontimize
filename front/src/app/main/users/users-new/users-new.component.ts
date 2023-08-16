@@ -8,18 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class UsersNewComponent implements OnInit {
 
   public arraySubscription: Object[] = [{
-    key: 0,
+    key: 'Normal',
     value: 'Normal'
   }, {
-    key: 1,
+    key: 'Premium',
     value: 'Premium'
   }];
 
   public arrayUser: Object[] = [{
-    key: 0,
+    key: 'admin',
     value: 'admin'
   }, {
-    key: 1,
+    key: 'user',
     value: 'user'
   }];
 

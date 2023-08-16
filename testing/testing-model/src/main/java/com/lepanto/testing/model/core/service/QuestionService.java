@@ -41,10 +41,9 @@ public class QuestionService implements IQuestionService {
         return this.daoHelper.update(questionDao, attrMap, keyMap);
     }
 
-    public EntityResult questionDelete(Map<?, ?> keyMap) {
-        Map<Object, Object> attrMap = new HashMap<>();
-        //attrMap.put("user_down_date", new Timestamp(Calendar.getInstance().getTimeInMillis()));
-        return this.daoHelper.update(this.questionDao, attrMap, keyMap);
+    public EntityResult questionDelete(Map<String, Object> keyMap) {
+        return this.daoHelper.delete(this.questionDao, keyMap);
     }
+
 
 }

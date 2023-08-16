@@ -4,6 +4,9 @@ export const SERVICE_CONFIG: Object = {
   },
   'questions': {
     'path': '/questions'
-  }
+  },
+  'aptitudes': {
+    'path': '/aptitudes'
+  },
   
 };

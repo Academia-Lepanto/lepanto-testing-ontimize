@@ -12,6 +12,6 @@ public interface IQuestionService {
     public EntityResult questionQuery(Map<?, ?> keyMap, List<?> attrList);
     public EntityResult questionInsert(Map<?, ?> attrMap);
     public EntityResult questionUpdate(Map<?, ?> attrMap, Map<?, ?> keyMap);
-    public EntityResult questionDelete(Map<?, ?> keyMap);
+    public EntityResult questionDelete(Map<String, Object> keyMap);
 
 }

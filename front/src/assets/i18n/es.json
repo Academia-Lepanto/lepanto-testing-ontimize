@@ -29,5 +29,11 @@
   "answer1": "Respuesta A",
   "answer2": "Respuesta B",
   "answer3": "Respuesta C",
-  "answer4": "Respuesta D"
+  "answer4": "Respuesta D",
+  "username" : "Nombre Usuario",
+  "name" : "Nombre",
+  "surnames" : "Apellidos",
+  "subscription" : "Suscripción",
+  "start_date" : "Fecha Inicio",
+  "role" : "Rol"
 }
