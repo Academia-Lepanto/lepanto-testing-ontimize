@@ -15,7 +15,7 @@
       <o-row class="form-row">
         <o-combo class="margin" attr="subscription" label="Tipo suscripción" required="yes" multiple="no" fxFlex
           [static-data]="getDataArraySubscripton()" [data]="getValueSimple()" value-column="key" columns="key;value"
-          empty="no" visible-columns="value" sort="ASC" searchable="no">
+          empty="no" visible-columns="value" sort="ASC" searchable="no" fxFlex="40">
         </o-combo>
       </o-row>
 
@@ -23,7 +23,7 @@
 
         <o-combo class="margin" attr="role" label="Tipo usuario" required="yes" multiple="no" fxFlex
           [static-data]="getDataArrayUserType()" [data]="getValueSimple()" value-column="key" columns="key;value"
-          empty="no" visible-columns="value" sort="ASC" searchable="no">
+          empty="no" visible-columns="value" sort="ASC" searchable="no" fxFlex="40">
         </o-combo>
       </o-row>
     </o-column>
