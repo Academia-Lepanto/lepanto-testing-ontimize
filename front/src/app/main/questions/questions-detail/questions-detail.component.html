@@ -1,1 +1,44 @@
-<p>questions-detail works!</p>
+<h1 class="titleText2">{{'EDITAR PREGUNTA' | oTranslate }}</h1>
+
+<o-form #formQuestion entity="question" service="questions" keys="question_code" header-actions="U"
+    show-header-navigation="no" keys-sql-types="STRING" class="form-background">
+
+    <div>
+        <div class="center">
+            <!-- Fila del formulario -->
+            <o-row class="form-row">
+                <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes" class="margin"
+                    enabled="no"></o-text-input>
+                <o-text-input class="input-padding" attr="question" fxFlex="100" required="yes"></o-text-input>
+            </o-row>
+            <o-row>
+                <o-text-input class="input-padding" attr="explication" fxFlex="40" required="yes"></o-text-input>
+            </o-row>
+                <o-column>
+                    <o-text-input class="input-padding" attr="answer1" fxFlex="40" required="yes"></o-text-input>
+                    <o-text-input class="input-padding" attr="answer2" fxFlex="40" required="yes"></o-text-input>
+                    <o-text-input class="input-padding" attr="answer3" fxFlex="40" required="yes"></o-text-input>
+                    <o-text-input class="input-padding" attr="answer4" fxFlex="40" required="yes"></o-text-input>
+                </o-column>
+
+            <!-- PARA COMBOS
+      <o-row class="form-row">
+        <o-combo class="margin" attr="subscription_type" label="Tipo suscripción" required="yes" multiple="no" fxFlex
+        [static-data]="getDataArraySubscripton()" [data]="getValueSimple()" value-column="key" columns="key;value" empty="no"
+        visible-columns="value" sort="ASC" searchable="no">
+        </o-combo>
+      </o-row>
+
+      <o-row class="form-row">
+
+        <o-combo class="margin" attr="user_type" label="Tipo usuario" required="yes" multiple="no" fxFlex
+        [static-data]="getDataArrayUserType()" [data]="getValueSimple()" value-column="key" columns="key;value" empty="no"
+        visible-columns="value" sort="ASC" searchable="no">
+        </o-combo>
+      </o-row>
+-->
+
+        </div>
+    </div>
+
+</o-form>
