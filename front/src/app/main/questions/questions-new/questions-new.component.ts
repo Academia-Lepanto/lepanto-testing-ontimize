@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { OComboComponent, OFormComponent } from 'ontimize-web-ngx';
 
 @Component({
   selector: 'app-questions-new',
@@ -7,33 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsNewComponent implements OnInit {
 
+  @ViewChild('formQuestion', { static: false }) formQuestion: OFormComponent; // Referencia al componente OFormComponent
+  @ViewChild('aptitudeCombo', { static: false }) public aptitudeCombo: OComboComponent;
+  
   constructor() { }
 
   ngOnInit() {
-    const aptitudeCombo = document.getElementById('aptitudeCombo') as HTMLSelectElement;
-    const categoryCombo = document.getElementById('categoryCombo') as HTMLSelectElement;
 
-    aptitudeCombo.addEventListener('change', () => {
-      const selectedAptitudeId = aptitudeCombo.value;
+  }
 
-      // Simulando una llamada a un servicio para obtener las categorías basadas en la aptitud seleccionada
-      const categories = [
-        { aptitude_id: '1', category_name: 'Category A' },
-        { aptitude_id: '1', category_name: 'Category B' },
-        { aptitude_id: '2', category_name: 'Category C' },
-        // ... Agrega más categorías según la aptitud seleccionada
-      ];
 
-      // Filtrar las categorías basadas en la aptitud seleccionada
-      const filteredCategories = categories.filter(category => category.aptitude_id === selectedAptitudeId);
+  onAptitudeChange(event: any) {
+    // Obtener el valor seleccionado del combo
+    const selectedValue = this.aptitudeCombo.getValue();
 
-      // Agregar nuevas opciones al combo de categorías
-      filteredCategories.forEach(category => {
-        const option = document.createElement('option');
-        option.value = category.aptitude_id;
-        option.textContent = category.category_name;
-        categoryCombo.appendChild(option);
-      });
-    });
+    // Establecer el valor en el campo de texto
+    console.log(selectedValue);
   }
 }

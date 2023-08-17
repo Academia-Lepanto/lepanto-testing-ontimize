@@ -1,5 +1,6 @@
 <h1 class="titleText2">{{'AÑADIR PREGUNTA' | oTranslate }}</h1>
-<o-form service="questions" entity="question" keys="question_code" header-actions="R;I;U;D" show-header-navigation="no">
+<o-form #formQuestion service="questions" entity="question" keys="question_code" header-actions="R;I;U;D"
+    show-header-navigation="no">
     <div>
         <o-row>
             <o-column title-label="QUESTION_INFORMATION" fxFlex>
@@ -7,14 +8,15 @@
                     <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes"></o-text-input>
                     <o-text-input class="input-padding" attr="question" fxFlex="250" required="yes"></o-text-input>
                     <o-row>
-                        <o-combo id="categoryCombo" attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
-                            value-column="aptitude_name" columns="aptitude_name" visible-columns="aptitude_name" required="yes"
-                            multiple="no" fxFlex sort="ASC" searchable="yes"></o-combo>
+                        <o-combo #aptitudeCombo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes"
+                            keys="aptitude_id" value-column="aptitude_name" columns="aptitude_name"
+                            visible-columns="aptitude_name" required="yes" multiple="no" fxFlex sort="ASC"
+                            searchable="yes" (onChange)="onAptitudeChange($event)"></o-combo>
 
-                        <o-combo id="aptitudeCombo" attr="category" label="Categoria" service="categoryAptitude" entity="allCategoryAptitude"
-                            keys="aptitude_id" value-column="category_name" columns="category_name,aptitude_id"
-                            visible-columns="category_name" required="no" multiple="no" fxFlex sort="ASC"
-                            searchable="yes"></o-combo>
+                        <o-combo #categoryCombo attr="category" label="Categoria" service="categoryAptitude"
+                            entity="allCategoryAptitude" keys="aptitude_id" value-column="category_name"
+                            columns="category_name,aptitude_id" visible-columns="category_name" required="no"
+                            multiple="no" fxFlex sort="ASC" searchable="yes"></o-combo>
 
                     </o-row>
                     <o-text-input attr="explication" fxFlex="250"></o-text-input>

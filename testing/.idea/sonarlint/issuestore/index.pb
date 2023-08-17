@@ -21,3 +21,5 @@ Stesting-model/src/main/java/com/lepanto/testing/model/core/service/UserService.
 Ktesting-model/src/main/java/com/lepanto/testing/model/core/dao/UserDao.java,d\a\da88164e35a2ea28001e907bc9324def806a1f82
 ˆ
 Xtesting-model/src/main/java/com/lepanto/testing/model/core/service/AptitudesService.java,6\3\63381840107472bd04a9d45459783a57f4ebb2b4
+‡
+Wtesting-model/src/main/java/com/lepanto/testing/model/core/dao/CategoryAptitudeDao.java,7\6\7626c6cc2cdf41d20bb10ae1c5dae7818ea3cd57
