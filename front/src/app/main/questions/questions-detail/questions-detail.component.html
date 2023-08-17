@@ -14,14 +14,16 @@
             <o-row>
                 <o-text-input class="input-padding" attr="explication" fxFlex="40" required="yes"></o-text-input>
 
-                <o-combo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
-                    value-column="aptitude_name" columns="aptitude_name" visible-columns="aptitude_name" required="yes"
-                    multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
+                <o-combo #aptitudeCombo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes"
+                    keys="aptitude_id" value-column="aptitude_name" columns="aptitude_name;aptitude_id"
+                    visible-columns="aptitude_name" required="yes" multiple="no" fxFlex sort="ASC" searchable="yes"
+                    fxFlex="20" (onChange)="onAptitudeChange($event)">
+                </o-combo>
 
-                <o-combo attr="category" label="Categoria" service="categoryAptitude" entity="allCategoryAptitude"
-                    keys="aptitude_id" value-column="category_name" columns="category_name,aptitude_id"
-                    visible-columns="category_name" required="no" multiple="no" fxFlex sort="ASC" searchable="yes"
-                    fxFlex="20"></o-combo>
+                <o-combo #categoryCombo attr="category" label="Categoria" service="categoryAptitude"
+                    entity="allCategoryAptitude" keys="aptitude_id" value-column="category_name"
+                    columns="category_name,aptitude_id" visible-columns="category_name" required="no" multiple="no"
+                    fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
             </o-row>
             <div>
                 <o-column>
