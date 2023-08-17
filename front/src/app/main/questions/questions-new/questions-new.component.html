@@ -7,11 +7,11 @@
                     <o-text-input class="input-padding" attr="question_code" fxFlex="40" required="yes"></o-text-input>
                     <o-text-input class="input-padding" attr="question" fxFlex="250" required="yes"></o-text-input>
                     <o-row>
-                        <o-combo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
+                        <o-combo id="categoryCombo" attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
                             value-column="aptitude_name" columns="aptitude_name" visible-columns="aptitude_name" required="yes"
                             multiple="no" fxFlex sort="ASC" searchable="yes"></o-combo>
 
-                        <o-combo attr="category" label="Categoria" service="categoryAptitude" entity="allCategoryAptitude"
+                        <o-combo id="aptitudeCombo" attr="category" label="Categoria" service="categoryAptitude" entity="allCategoryAptitude"
                             keys="aptitude_id" value-column="category_name" columns="category_name,aptitude_id"
                             visible-columns="category_name" required="no" multiple="no" fxFlex sort="ASC"
                             searchable="yes"></o-combo>
@@ -26,19 +26,19 @@
         <o-column>
             <o-row>
                 <o-text-input class="input-padding" attr="answer1" fxFlex="50" required="yes"></o-text-input>
-                <o-slide-toggle attr="slidetoggle-editable1" label="" read-only="no"></o-slide-toggle>
+                <o-slide-toggle attr="answer1_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer2" fxFlex="50" required="yes"></o-text-input>
-                <o-slide-toggle attr="slidetoggle-editable2" label="" read-only="no"></o-slide-toggle>
+                <o-slide-toggle attr="answer2_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer3" fxFlex="50" required="yes"></o-text-input>
-                <o-slide-toggle attr="slidetoggle-editable3" label="" read-only="no"></o-slide-toggle>
+                <o-slide-toggle attr="answer3_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer4" fxFlex="50" required="yes"></o-text-input>
-                <o-slide-toggle attr="slidetoggle-editable4" label="" read-only="no"></o-slide-toggle>
+                <o-slide-toggle attr="answer4_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
         </o-column>
     </div>
