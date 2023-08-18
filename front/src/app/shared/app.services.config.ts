@@ -14,5 +14,8 @@ export const SERVICE_CONFIG: Object = {
   'role': {
     'path': '/role'
   },
+  'subscription': {
+    'path': '/subscription'
+  },
   
 };

@@ -13,10 +13,9 @@
         <o-date-input attr="start_date" fxFlex="20"></o-date-input>
       </o-row>
       <o-row class="form-row">
-        <o-combo class="margin" attr="subscription" label="Tipo suscripción" required="yes" multiple="no" fxFlex
-          [static-data]="getDataArraySubscripton()" [data]="getValueSimple()" value-column="key" columns="key;value"
-          empty="no" visible-columns="value" sort="ASC" searchable="no" fxFlex="40">
-        </o-combo>
+        <o-combo #subscriptionCombo attr="subscription" label="Suscripción" service="subscription" entity="subscription"
+          keys="id" value-column="subscription_type" columns="subscription_type" visible-columns="subscription_type" required="yes"
+          multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
       </o-row>
 
       <o-row class="form-row">

@@ -13,10 +13,6 @@ Utesting-api/src/main/java/com/lepanto/testing/api/core/service/IAptitudesServic
 Xtesting-model/src/main/java/com/lepanto/testing/model/core/service/AptitudesService.java,6\3\63381840107472bd04a9d45459783a57f4ebb2b4
 †
 Vtesting-ws/src/main/java/com/lepanto/testing/ws/core/rest/AptitudesRestController.java,f\8\f8056a6b264e24fcd23a75eddb5a8c52360940bc
-{
-Ktesting-model/src/main/java/com/lepanto/testing/model/core/dao/UserDao.java,d\a\da88164e35a2ea28001e907bc9324def806a1f82
-€
-Ptesting-api/src/main/java/com/lepanto/testing/api/core/service/IUserService.java,e\d\ed6a6651155e4e20f44b92d06dc43e9e5431ea63
 ƒ
 Stesting-model/src/main/java/com/lepanto/testing/model/core/service/UserService.java,2\6\26942e5e5d4ca63297a8e56e89a295ca8823ffb1
 ‡
