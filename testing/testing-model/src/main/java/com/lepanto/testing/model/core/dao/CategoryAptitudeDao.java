@@ -13,5 +13,6 @@ import org.springframework.stereotype.Repository;
 public class CategoryAptitudeDao extends OntimizeJdbcDaoSupport {
     public static final String ATTR_APTITUDE_ID = "aptitude_id";
     public static final String ATTR_CATEGORY_ID = "category_id";
+    public static final String ATTR_APTITUDE_NAME = "aptitude_name";
 }
 

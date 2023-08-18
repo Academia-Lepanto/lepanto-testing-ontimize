@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface ICategoryAptitudeService {
-    public EntityResult categoryAptitudeQuery(Map<Object, String> keyMap, List<String> attrList);
+    public EntityResult categoryAptitudeQuery(Map<String, Object> keyMap, List<String> attrList);
     // Consulta todas los categorias de una aptitud
     public EntityResult allCategoryAptitudeQuery(Map<Object, String> keyMap, List<String> attrList);
 

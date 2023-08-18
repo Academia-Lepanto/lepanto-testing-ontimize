@@ -6,52 +6,8 @@
         datasource="mainDataSource" sqlhandler="dbSQLStatementHandler">
     <DeleteKeys>
         <Column>category_id</Column>
-        <Column>aptitude_id</Column>
     </DeleteKeys>
     <UpdateKeys>
         <Column>category_id</Column>
-        <Column>aptitude_id</Column>
     </UpdateKeys>
-    <Queries>
-        <Query id="default">
-            <ValidColumns>
-                <Column>category_id</Column>
-                <Column>aptitude_id</Column>
-                <Column>category_name</Column>
-            </ValidColumns>
-
-            <Sentence>
-                <![CDATA[
-                          SELECT
-                              #COLUMNS#
-                          FROM
-                              ${mainschema}.categories
-                          #WHERE#
-                      ]]>
-            </Sentence>
-        </Query>
-
-
-        <Query id="categoriesByAptitude">
-
-            <ValidColumns>
-                <Column>category_id</Column>
-                <Column>aptitude_id</Column>
-                <Column>category_name</Column>
-            </ValidColumns>
-
-            <Sentence>
-                <![CDATA[
-                          SELECT
-                              #COLUMNS#
-                          FROM
-                              ${mainschema}.categories c
-                              JOIN  ${mainschema}.aptitudes a ON a.aptitude_id = c.aptitude_id
-                          #WHERE#
-                      ]]>
-            </Sentence>
-        </Query>
-
-
-    </Queries>
 </JdbcEntitySetup>

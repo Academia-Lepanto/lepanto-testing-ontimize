@@ -5,8 +5,6 @@
 Qtesting-ws/src/main/java/com/lepanto/testing/ws/core/rest/MainRestController.java,6\6\6680825f61fe4c386e62dc0cd22e11fc0194e29e
 Å
 Qtesting-ws/src/main/java/com/lepanto/testing/ws/core/rest/UserRestController.java,9\c\9cc10c39cea4964a1988639dc86a8cbb622b9fde
-Ä
-Ptesting-model/src/main/java/com/lepanto/testing/model/core/dao/AptitudesDao.java,1\3\13533b6ccb048bda232dd76ad3f4cacc569a0986
 Ö
 Utesting-api/src/main/java/com/lepanto/testing/api/core/service/IAptitudesService.java,e\a\ea8c212d6459b5caa38e218f8963aa88c8c1b808
 Ü
@@ -15,5 +13,3 @@ Vtesting-ws/src/main/java/com/lepanto/testing/ws/core/rest/AptitudesRestControll
 Stesting-model/src/main/java/com/lepanto/testing/model/core/service/UserService.java,2\6\26942e5e5d4ca63297a8e56e89a295ca8823ffb1
 à
 Xtesting-model/src/main/java/com/lepanto/testing/model/core/service/AptitudesService.java,6\3\63381840107472bd04a9d45459783a57f4ebb2b4
-á
-Wtesting-model/src/main/java/com/lepanto/testing/model/core/dao/CategoryAptitudeDao.java,7\6\7626c6cc2cdf41d20bb10ae1c5dae7818ea3cd57
