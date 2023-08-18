@@ -11,5 +11,8 @@ export const SERVICE_CONFIG: Object = {
   'categoryAptitude': {
     'path': '/categoryAptitude'
   },
+  'role': {
+    'path': '/role'
+  },
   
 };

@@ -20,11 +20,9 @@
       </o-row>
 
       <o-row class="form-row">
-
-        <o-combo class="margin" attr="role" label="Tipo usuario" required="yes" multiple="no" fxFlex
-          [static-data]="getDataArrayUserType()" [data]="getValueSimple()" value-column="key" columns="key;value"
-          empty="no" visible-columns="value" sort="ASC" searchable="no" fxFlex="40">
-        </o-combo>
+        <o-combo #userTypeCombo attr="role" label="Tipo usuario" service="role" entity="role" keys="id_rolename"
+          value-column="rolename" columns="rolename" visible-columns="rolename" required="yes" multiple="no" fxFlex
+          sort="ASC" searchable="yes" fxFlex="20"></o-combo>
       </o-row>
     </o-column>
   </o-row>
