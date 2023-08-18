@@ -17,7 +17,7 @@
                 <o-combo #aptitudeCombo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes"
                     keys="aptitude_id" value-column="aptitude_name" columns="aptitude_name"
                     visible-columns="aptitude_name" required="yes" multiple="no" fxFlex sort="ASC" searchable="yes"
-                    fxFlex="20" (onChange)="onAptitudeChange($event)">
+                    fxFlex="20" (onChange)="actionClick($event)">
                 </o-combo>
 
                 <o-combo #categoryCombo attr="category" label="Categoria" service="categoryAptitude"

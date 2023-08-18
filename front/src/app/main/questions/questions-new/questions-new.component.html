@@ -11,13 +11,11 @@
                         <o-combo #aptitudeCombo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes"
                             keys="aptitude_id" value-column="aptitude_name" columns="aptitude_name"
                             visible-columns="aptitude_name" required="yes" multiple="no" fxFlex sort="ASC"
-                            searchable="yes" (onChange)="onAptitudeChange($event)"></o-combo>
-
-                        <o-combo #categoryCombo attr="category" label="Categoria" service="categoryAptitude"
-                            entity="allCategoryAptitude" keys="aptitude_id" value-column="category_name"
-                            columns="category_name,aptitude_id" visible-columns="category_name" required="no"
-                            multiple="no" fxFlex sort="ASC" searchable="yes"></o-combo>
-
+                            searchable="yes" fxFlex="20" (onChange)="actionClick($event)">
+                        </o-combo>
+                        <o-combo #categoryCombo attr="category" value-column="category_name"
+                            columns="category_name;aptitude_name" visible-columns="category_name">
+                        </o-combo>
                     </o-row>
                     <o-text-input attr="explication" fxFlex="250"></o-text-input>
                 </o-column>
