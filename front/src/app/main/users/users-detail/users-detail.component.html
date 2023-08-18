@@ -12,22 +12,17 @@
         <o-text-input class="input-padding" attr="surnames" fxFlex="50" required="yes"></o-text-input>
       </o-row>
 
-<!-- PARA COMBOS
       <o-row class="form-row">
-        <o-combo class="margin" attr="subscription_type" label="Tipo suscripción" required="yes" multiple="no" fxFlex
-        [static-data]="getDataArraySubscripton()" [data]="getValueSimple()" value-column="key" columns="key;value" empty="no"
-        visible-columns="value" sort="ASC" searchable="no">
-        </o-combo>
+        <o-combo #subscriptionCombo attr="subscription" label="Suscripción" service="subscription" entity="subscription"
+          keys="id" value-column="subscription_type" columns="subscription_type" visible-columns="subscription_type" required="yes"
+          multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
       </o-row>
 
       <o-row class="form-row">
-
-        <o-combo class="margin" attr="user_type" label="Tipo usuario" required="yes" multiple="no" fxFlex
-        [static-data]="getDataArrayUserType()" [data]="getValueSimple()" value-column="key" columns="key;value" empty="no"
-        visible-columns="value" sort="ASC" searchable="no">
-        </o-combo>
+        <o-combo #userTypeCombo attr="role" label="Tipo usuario" service="role" entity="role" keys="id_rolename"
+          value-column="rolename" columns="rolename" visible-columns="rolename" required="yes" multiple="no" fxFlex
+          sort="ASC" searchable="yes" fxFlex="20"></o-combo>
       </o-row>
--->
 
     </div>
   </div>
