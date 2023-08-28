@@ -1,1 +1,1 @@
-web: npm start
+cd front && npm run build
