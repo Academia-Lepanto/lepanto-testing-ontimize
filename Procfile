@@ -1,1 +1,1 @@
-cd front && npm run build
+cd front && npm install && npm run build
