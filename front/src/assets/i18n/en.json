@@ -17,7 +17,7 @@
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password",
   "REMEMBER_ME": "Remember me",
   "FORGOT_PWD": "Forgot your password?",
-  "FOOTER_CREATED_BY": "Created by Imatia Innovation",
+  "FOOTER_CREATED_BY": "Created by Lepanto Academy",
   "FOOTER_RIGHTS": "All rights reserved",
   "USERS": "Users",
   "QUESTIONS": "Questions",
@@ -35,5 +35,6 @@
   "surnames" : "Surnames",
   "subscription" : "Subscription",
   "start_date" : "Start Date",
-  "role" : "RolE"
+  "role" : "RolE",
+  "time" : "Timne"
 }

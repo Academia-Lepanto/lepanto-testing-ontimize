@@ -16,7 +16,14 @@
                         <o-combo #categoryCombo attr="category" value-column="category_name"
                             columns="category_name;aptitude_name" visible-columns="category_name">
                         </o-combo>
+                        <o-integer-input #inputTime attr="time" read-only="false" required="true"></o-integer-input>
                     </o-row>
+                    <div>
+                        <o-column>
+                            <o-image attr="images" empty-image="assets/images/no-image.png" sql-type="OTHER"
+                                fxFlex="20"></o-image>
+                        </o-column>
+                    </div>
                     <o-text-input attr="explication" fxFlex="250"></o-text-input>
                 </o-column>
             </o-column>
