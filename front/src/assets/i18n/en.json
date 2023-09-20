@@ -35,5 +35,6 @@
   "surnames" : "Surnames",
   "subscription" : "Subscription",
   "start_date" : "Start Date",
-  "role" : "RolE"
+  "role" : "RolE",
+  "CATEGORIES": "Categories"
 }

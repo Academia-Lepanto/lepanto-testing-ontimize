@@ -35,5 +35,6 @@
   "surnames" : "Apellidos",
   "subscription" : "Suscripción",
   "start_date" : "Fecha Inicio",
-  "role" : "Rol"
+  "role" : "Rol",
+  "CATEGORIES": "Categorías"
 }
