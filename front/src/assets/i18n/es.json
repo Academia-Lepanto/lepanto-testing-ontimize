@@ -36,5 +36,7 @@
   "subscription" : "Suscripción",
   "start_date" : "Fecha Inicio",
   "role" : "Rol",
-  "CATEGORIES": "Categorías"
+  "CATEGORIES": "Categorías",
+  "category_name" : "Categoría",
+  "aptitude_name" : "Aptitud"
 }

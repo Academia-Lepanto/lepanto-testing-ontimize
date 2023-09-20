@@ -1,0 +1,12 @@
+<h1 class="titleText2">{{'AÑADIR CATEGORIA' | oTranslate }}</h1>
+<o-form service="categoryAptitude" entity="allCategoryAptitude" keys="category_id" header-actions="R;I;U;D"
+    show-header-navigation="no">
+    <o-row>
+        <o-text-input class="input-padding" attr="category_name" fxFlex="40" required="yes"></o-text-input>
+    </o-row>
+    <o-combo #aptitudeCombo attr="aptitude" label="Aptitud" service="aptitudes" entity="aptitudes" keys="aptitude_id"
+        value-column="aptitude_name" columns="aptitude_name" visible-columns="aptitude_name" required="yes"
+        multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20">
+    </o-combo>
+
+</o-form>
