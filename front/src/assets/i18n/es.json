@@ -38,5 +38,7 @@
   "role" : "Rol",
   "CATEGORIES": "Categorías",
   "category_name" : "Categoría",
-  "aptitude_name" : "Aptitud"
+  "aptitude_name" : "Aptitud",
+  "email" : "Email",
+  "tlf" : "Teléfono"
 }

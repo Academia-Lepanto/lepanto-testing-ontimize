@@ -1,5 +1,6 @@
 <h1 class="titleText2">{{'AÑADIR USUARIO' | oTranslate }}</h1>
-<o-form service="users" entity="user" keys="username" header-actions="R;I;U;D" show-header-navigation="no">
+<o-form #formNewUser service="users" entity="user" keys="username" header-actions="I" show-header-navigation="no"
+  (onInsert)="encryptPassword()" confirm-exit="no">
   <o-row>
     <o-column title-label="CUSTOMER_PERSONAL_INFORMATION" fxFlex>
       <o-row>
@@ -7,15 +8,20 @@
         <o-text-input class="input-padding" attr="name" fxFlex="40" required="yes"></o-text-input>
         <o-text-input class="input-padding" attr="surnames" fxFlex="40" required="yes"></o-text-input>
         <o-nif-input class="input-padding" attr="dni" fxFlex="40" required="yes"></o-nif-input>
-        <o-password-input class="input-padding" attr="password" fxFlex="40" required="yes"></o-password-input>
+        <o-password-input class="input-padding" attr="password" fxFlex="40" required="yes"
+          (onBlur)="getPassword()"></o-password-input>
+      </o-row>
+      <o-row>
+        <o-email-input attr="email" fxFlex="20" required="no"></o-email-input>
+        <o-phone-input attr="tlf" fxFlex="20" required="no"></o-phone-input>
       </o-row>
       <o-row>
         <o-date-input attr="start_date" fxFlex="20"></o-date-input>
       </o-row>
       <o-row class="form-row">
         <o-combo #subscriptionCombo attr="subscription" label="Suscripción" service="subscription" entity="subscription"
-          keys="id" value-column="subscription_type" columns="subscription_type" visible-columns="subscription_type" required="yes"
-          multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
+          keys="id" value-column="subscription_type" columns="subscription_type" visible-columns="subscription_type"
+          required="yes" multiple="no" fxFlex sort="ASC" searchable="yes" fxFlex="20"></o-combo>
       </o-row>
 
       <o-row class="form-row">
