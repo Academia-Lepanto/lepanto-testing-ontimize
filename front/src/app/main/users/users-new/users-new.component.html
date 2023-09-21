@@ -1,6 +1,5 @@
 <h1 class="titleText2">{{'AÑADIR USUARIO' | oTranslate }}</h1>
-<o-form #formNewUser service="users" entity="user" keys="username" header-actions="I" show-header-navigation="no"
-  (onInsert)="encryptPassword()" confirm-exit="no">
+<o-form #formNewUser service="users" entity="user" keys="username" header-actions="I" show-header-navigation="no" confirm-exit="no">
   <o-row>
     <o-column title-label="CUSTOMER_PERSONAL_INFORMATION" fxFlex>
       <o-row>

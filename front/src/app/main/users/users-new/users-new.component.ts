@@ -1,7 +1,6 @@
 import { Component, Injector, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { OFormComponent, OPasswordInputComponent, OntimizeService } from 'ontimize-web-ngx';
-import * as bcrypt from 'bcryptjs';
 
 @Component({
   selector: 'app-users-new',
@@ -64,22 +63,21 @@ export class UsersNewComponent implements OnInit {
     password = this.formNewUser.formGroup.get('password').value;
     // Almacena el valor en la variable
     this.enteredPassword = password;
-    console.log(this.enteredPassword);
-  }
+    const encryptedPassword = btoa(password);
+    console.log(encryptedPassword);
+    this.formNewUser.formGroup.get('password').setValue(encryptedPassword);
+  } 
 
-  async encryptPassword() {
-    try {
-      // Utiliza bcrypt para encriptar la contraseña
-      const saltRounds = 10; // Número de rondas de sal (cuanto mayor, más seguro)
-      const hashedPassword = await bcrypt.hash(this.enteredPassword, saltRounds);
-      console.log("Contraseña encriptada:", hashedPassword);
-
-      // Ahora puedes usar 'hashedPassword' para almacenarla en tu base de datos o donde la necesites.
-    } catch (error) {
-      console.error("Error al encriptar la contraseña:", error);
-    }
-  }
-
+/* ENCRIPTACION BCRYPT  
+ async getPassword(password) {
+    // Accede al valor del campo de contraseña
+    password = this.formNewUser.formGroup.get('password').value;
+    // Almacena el valor en la variable
+    this.enteredPassword = password;
+    const saltRounds = 10; // Número de rondas de sal (cuanto mayor, más seguro)
+    const hashedPassword = await bcrypt.hash(this.enteredPassword, saltRounds);
+    console.log(hashedPassword);
+    this.formNewUser.formGroup.get('password').setValue(hashedPassword);
+  } */
 
 }
-

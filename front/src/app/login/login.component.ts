@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     const userName = this.loginForm.value.username;
-    const password = this.loginForm.value.password;
+    const password = btoa(this.loginForm.value.password);
     if (userName && userName.length > 0 && password && password.length > 0) {
       const self = this;
       this.authService.login(userName, password)
