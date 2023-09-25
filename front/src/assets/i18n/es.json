@@ -40,5 +40,6 @@
   "category_name" : "Categoría",
   "aptitude_name" : "Aptitud",
   "email" : "Email",
-  "tlf" : "Teléfono"
+  "tlf" : "Teléfono",
+  "last_modification" : "Última modificación"
 }
