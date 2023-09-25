@@ -17,6 +17,9 @@
                             columns="category_name;aptitude_name" visible-columns="category_name">
                         </o-combo>
                     </o-row>
+                    <o-row>
+                        <o-image attr="images" empty-image="assets/images/no-image.png" sql-type="OTHER"></o-image>
+                    </o-row>
                     <o-text-input attr="explication" fxFlex="250"></o-text-input>
                 </o-column>
             </o-column>
@@ -28,17 +31,29 @@
                 <o-text-input class="input-padding" attr="answer1" fxFlex="50" required="yes"></o-text-input>
                 <o-slide-toggle attr="answer1_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
+            <o-row [style.display]="imagesVisible ? 'block' : 'none'">
+                <o-image class="imagesAnswers" attr="images_a1" empty-image="assets/images/no-image.png" sql-type="OTHER"></o-image>
+            </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer2" fxFlex="50" required="yes"></o-text-input>
                 <o-slide-toggle attr="answer2_correct" label="" read-only="no"></o-slide-toggle>
+            </o-row>
+            <o-row [style.display]="imagesVisible ? 'block' : 'none'">
+                <o-image class="imagesAnswers" attr="images_a2" empty-image="assets/images/no-image.png" sql-type="OTHER"></o-image>
             </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer3" fxFlex="50" required="yes"></o-text-input>
                 <o-slide-toggle attr="answer3_correct" label="" read-only="no"></o-slide-toggle>
             </o-row>
+            <o-row [style.display]="imagesVisible ? 'block' : 'none'">
+                <o-image class="imagesAnswers" attr="images_a3" empty-image="assets/images/no-image.png" sql-type="OTHER"></o-image>
+            </o-row>
             <o-row>
                 <o-text-input class="input-padding" attr="answer4" fxFlex="50" required="yes"></o-text-input>
                 <o-slide-toggle attr="answer4_correct" label="" read-only="no"></o-slide-toggle>
+            </o-row>
+            <o-row [style.display]="imagesVisible ? 'block' : 'none'">
+                <o-image class="imagesAnswers" attr="images_a4" empty-image="assets/images/no-image.png" sql-type="OTHER"></o-image>
             </o-row>
         </o-column>
     </div>

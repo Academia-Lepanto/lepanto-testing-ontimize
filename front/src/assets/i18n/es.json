@@ -41,5 +41,6 @@
   "aptitude_name" : "Aptitud",
   "email" : "Email",
   "tlf" : "Teléfono",
-  "last_modification" : "Última modificación"
+  "last_modification" : "Última modificación",
+  "images" : "Imagen"
 }

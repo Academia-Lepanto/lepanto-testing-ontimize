@@ -15,6 +15,9 @@ export class QuestionsNewComponent implements OnInit {
   @ViewChild('aptitudeCombo', { static: false }) public aptitudeCombo: OComboComponent;
   @ViewChild('categoryCombo', { static: false }) public categoryCombo: OComboComponent;
 
+
+  public imagesVisible = false;
+
   constructor(private formBuilder: FormBuilder, public injector: Injector) {
     this.categoryAptitudeService = this.injector.get(OntimizeService);
   }
@@ -25,16 +28,22 @@ export class QuestionsNewComponent implements OnInit {
     this.categoryAptitudeService.configureService(conf);
   }
 
+
   actionClick(event) {
     const selectedValue = this.aptitudeCombo.getValue();
-  
-    this.categoryAptitudeService.query({ id: event.id }, ['category_name','aptitude_name'], 'categoryAptitude').subscribe(res => {
+
+    this.categoryAptitudeService.query({ id: event.id }, ['category_name', 'aptitude_name'], 'categoryAptitude').subscribe(res => {
+
+      if (selectedValue == 'MEMORIA') {
+        this.imagesVisible = true;
+      } else {
+        this.imagesVisible = false;
+      }
       if (res.data && res.data.length) {
         const filteredArray = res.data.filter(item => item.aptitude_name === selectedValue);
         this.categoryCombo.setDataArray(filteredArray)
       }
     });
   }
-
 
 }

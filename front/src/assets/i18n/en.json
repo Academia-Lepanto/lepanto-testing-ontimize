@@ -41,5 +41,6 @@
   "aptitude_name" : "Aptitude name",
   "email" : "Email",
   "tlf" : "phone",
-  "last_modification" : "Last modification"
+  "last_modification" : "Last modification",
+  "images" : "Image"
 }
