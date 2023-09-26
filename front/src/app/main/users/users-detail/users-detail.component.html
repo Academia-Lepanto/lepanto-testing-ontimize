@@ -16,7 +16,13 @@
         <o-email-input attr="email" fxFlex="20" required="no"></o-email-input>
         <o-phone-input attr="tlf" fxFlex="20" required="no"></o-phone-input>
       </o-row>
-
+      <o-row>
+        <o-date-input attr="start_date" fxFlex="20"></o-date-input>
+      </o-row>
+      <o-row>
+        <o-date-input #endDateInput attr="end_date" fxFlex="20"></o-date-input>
+        <o-button attr="raised3" type="RAISED" label="Ampliar mensualidad" layout-padding color="accent" (onClick)="updateMonth($event)"></o-button>
+      </o-row>
       <o-row class="form-row">
         <o-combo #subscriptionCombo attr="subscription" label="Suscripción" service="subscription" entity="subscription"
           keys="id" value-column="subscription_type" columns="subscription_type" visible-columns="subscription_type"
