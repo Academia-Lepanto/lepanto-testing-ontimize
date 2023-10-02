@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   pwdCtrl: FormControl = new FormControl('', Validators.required);
   sessionExpired = false;
 
+  localStorage: any;
   router: Router;
 
   constructor(
@@ -43,6 +44,7 @@ export class LoginComponent implements OnInit {
 
   }
 
+  
   ngOnInit(): any {
     this.navigation.setVisible(false);
 
@@ -50,7 +52,12 @@ export class LoginComponent implements OnInit {
     this.loginForm.addControl('password', this.pwdCtrl);
 
     if (this.authService.isLoggedIn()) {
-      this.router.navigate(['../'], { relativeTo: this.actRoute });
+      let role_id = this.localStorage.getItem("role");
+      if (role_id == "admin") {
+        this.router.navigate(['/main/home'], { relativeTo: this.actRoute });
+      } else {
+        this.router.navigate(['/main/questions-home']);
+      }
     } else {
       this.authService.clearSessionData();
     }
