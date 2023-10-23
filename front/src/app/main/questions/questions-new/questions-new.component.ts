@@ -34,7 +34,7 @@ export class QuestionsNewComponent implements OnInit {
 
     this.categoryAptitudeService.query({ id: event.id }, ['category_name', 'aptitude_name'], 'categoryAptitude').subscribe(res => {
 
-      if (selectedValue == 'MEMORIA' || selectedValue == 'R.A' || selectedValue == 'ESPACIAL' || selectedValue == 'ATENCIÓN' ||selectedValue == 'MEMORIA' || selectedValue == 'NUMÉRICO')  {
+      if (selectedValue == 'MEMORIA' || selectedValue == 'R.A.' || selectedValue == 'ESPACIAL' || selectedValue == 'ATENCIÓN' ||selectedValue == 'MEMORIA' || selectedValue == 'NUMÉRICO')  {
         this.imagesVisible = true;
       } else {
         this.imagesVisible = false;

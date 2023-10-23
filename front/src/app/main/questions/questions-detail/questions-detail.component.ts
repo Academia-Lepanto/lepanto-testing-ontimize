@@ -30,7 +30,7 @@ export class QuestionsDetailComponent implements OnInit {
   actionClick(event) {
     const selectedValue = this.aptitudeCombo.getValue();
     if (this.categoryCombo.isEmpty) {
-      if (selectedValue == 'MEMORIA' || selectedValue == 'R.A' || selectedValue == 'ESPACIAL' || selectedValue == 'ATENCIÓN' || selectedValue == 'MEMORIA' || selectedValue == 'NUMÉRICO') {
+      if (selectedValue == 'MEMORIA' || selectedValue == 'R.A.' || selectedValue == 'ESPACIAL' || selectedValue == 'ATENCIÓN' || selectedValue == 'MEMORIA' || selectedValue == 'NUMÉRICO') {
         this.imagesVisible = true;
       } else {
         this.imagesVisible = false;
