@@ -5,7 +5,7 @@ import { SERVICE_CONFIG } from './shared/app.services.config';
 
 export const CONFIG: Config = {
   // The base path of the URL used by app services.
-  apiEndpoint: 'https://lepanto-back-api-c8d157e0a5c4.herokuapp.com',
+  apiEndpoint: 'https://academia-lepanto-c06a40ff939e.herokuapp.com',
   //apiEndpoint: 'http://localhost:8080',
   // Application identifier. Is the unique package identifier of the app.
   // It is used when storing or managing temporal data related with the app.
