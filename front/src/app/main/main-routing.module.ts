@@ -15,6 +15,7 @@ export const routes: Routes = [
       { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
       { path: 'categories', loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule) },
       { path: 'questions', loadChildren: () => import('./questions/questions.module').then(m => m.QuestionsModule) },
+      { path: 'resume', loadChildren: () => import('./resume/resume.module').then(m => m.ResumeModule) },
     ]
   }
 ];
