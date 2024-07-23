@@ -1,3 +1,12 @@
-<o-table attr="categoriesTable" service="categoryAptitude" entity="allCategoryAptitude" keys="category_id"
-    columns="category_name;aptitude_name" visible-columns="aptitude_name;category_name">
+<o-table #tableCountQuestion attr="countQuestions" service="questions" entity="questionCount"
+    columns="aptitude;countQuestions" visible-columns="countQuestions;aptitude" pagination-controls="no" fxFlex
+    controls="false">
+    <o-table-paginator page-size-options="10"></o-table-paginator>
+</o-table>
+
+
+<o-table attr="countQuestionsCategory" service="questions" entity="questionCountCategory"
+    columns="aptitude;countQuestions;category" visible-columns="countQuestions;category;aptitude"
+    pagination-controls="no" fxFlex controls="false">
+    <o-table-paginator page-size-options="100"></o-table-paginator>
 </o-table>
