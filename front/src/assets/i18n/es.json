@@ -42,5 +42,7 @@
   "email" : "Email",
   "tlf" : "Teléfono",
   "last_modification" : "Última modificación",
-  "images" : "Imagen"
+  "images" : "Imagen",
+  "countQuestions" : "Cantidad",
+  "RESUME" : "Resumen"
 }
