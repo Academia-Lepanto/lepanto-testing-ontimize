@@ -58,15 +58,6 @@ export class UsersNewComponent implements OnInit {
     this.userService.configureService(conf);
   }
 
-  getPassword(password) {
-    // Accede al valor del campo de contraseña
-    password = this.formNewUser.formGroup.get('password').value;
-    // Almacena el valor en la variable
-    this.enteredPassword = password;
-    const encryptedPassword = btoa(password);
-    console.log(encryptedPassword);
-    this.formNewUser.formGroup.get('password').setValue(encryptedPassword);
-  } 
 
 /* ENCRIPTACION BCRYPT  
  async getPassword(password) {
