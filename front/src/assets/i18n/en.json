@@ -44,5 +44,10 @@
   "last_modification": "Last modification",
   "images": "Image",
   "countQuestions": "Cuantity",
-  "RESUME": "Resume"
+  "RESUME": "Resume",
+  "imageExplication" : "Explanation Image",
+  "imageanswer1": "Image Answer A",
+  "imageanswer2": "Image Answer B",
+  "imageanswer3": "Image Answer C",
+  "imageanswer4": "Image Answer D"
 }
