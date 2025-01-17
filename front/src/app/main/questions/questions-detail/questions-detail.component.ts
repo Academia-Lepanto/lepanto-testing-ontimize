@@ -1,5 +1,6 @@
-import { Component, Injector, OnInit, ViewChild } from '@angular/core';
+import { Component, Injector, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { OComboComponent, OFormComponent, OTextInputComponent, OntimizeService } from 'ontimize-web-ngx';
 
 @Component({
@@ -7,7 +8,7 @@ import { OComboComponent, OFormComponent, OTextInputComponent, OntimizeService }
   templateUrl: './questions-detail.component.html',
   styleUrls: ['./questions-detail.component.css']
 })
-export class QuestionsDetailComponent implements OnInit {
+export class QuestionsDetailComponent implements OnInit, AfterViewInit {
 
   protected categoryAptitudeService: OntimizeService;
 
@@ -17,14 +18,18 @@ export class QuestionsDetailComponent implements OnInit {
 
   public imagesVisible = false;
 
-  constructor(private formBuilder: FormBuilder, public injector: Injector) {
+  constructor(private formBuilder: FormBuilder, public injector: Injector, private router: Router) {
     this.categoryAptitudeService = this.injector.get(OntimizeService);
   }
 
   ngOnInit() {
-    // Configuración del servicio Ontimize
+    // Código en ngOnInit para configuración del servicio
     const conf = this.categoryAptitudeService.getDefaultServiceConfiguration('categoryAptitude');
     this.categoryAptitudeService.configureService(conf);
+  }
+
+  ngAfterViewInit() {
+
   }
 
   actionClick(event) {
@@ -42,5 +47,12 @@ export class QuestionsDetailComponent implements OnInit {
         }
       });
     }
+  }
+
+  onClick(event: any): void {
+    const questionCode = this.formQuestion.getFieldValue("question_code");
+    console.log(questionCode);
+    const url = `https://psicotecnicos.academialepanto.com/questionByCode/${questionCode}`;
+    window.open(url, '_blank');
   }
 }
